@@ -2,12 +2,6 @@ package com.semenov.toss;
 
 public class Random {
 
-    public void series(int a){
-        for (int i=0;i<a;i++){
-            System.out.print(randomnicity()+" ");
-        }
-    }
-
     public String randomnicity(){
         double a = Math.random();
         int res;

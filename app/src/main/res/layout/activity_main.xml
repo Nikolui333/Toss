@@ -2,6 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <TextView
@@ -12,6 +13,7 @@
         tools:ignore="MissingConstraints"
         android:layout_margin="20dp"
         android:layout_below="@id/editText"
+        android:textSize="32sp"
         />
 
     <EditText
@@ -23,14 +25,26 @@
         android:inputType="textMultiLine"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:textSize="32sp"
         tools:ignore="MissingConstraints" />
 
     <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/main"
         android:text="@string/button"
         android:onClick="buttonToss"
+        android:textSize="32sp"
         />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
 
 </RelativeLayout>
