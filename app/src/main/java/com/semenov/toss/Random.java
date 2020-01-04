@@ -2,7 +2,7 @@ package com.semenov.toss;
 
 public class Random {
 
-    public String randomnicity(){
+    public int randomnicity(){
         double a = Math.random();
         int res;
 
@@ -11,8 +11,6 @@ public class Random {
 
         else res = 1;
 
-        String str = res+"";
-
-        return str;
+        return res;
     }
 }

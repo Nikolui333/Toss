@@ -5,22 +5,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/main"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        tools:ignore="MissingConstraints"
-        android:layout_margin="20dp"
-        android:layout_below="@id/editText"
-        android:textSize="32sp"
-        />
 
     <EditText
         android:id="@+id/editText"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:hint="@string/draw_throws"
         android:inputType="textMultiLine"
         android:layout_marginLeft="20dp"
@@ -32,7 +22,7 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/main"
+        android:layout_below="@+id/editText"
         android:text="@string/button"
         android:onClick="buttonToss"
         android:textSize="32sp"
@@ -41,10 +31,43 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
         android:layout_below="@id/button"
+        android:layout_marginLeft="15dp"
         >
     </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view2"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@id/recycler_view"
+        android:layout_marginLeft="15dp"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view3"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@id/recycler_view2"
+        android:layout_marginLeft="15dp"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view4"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@id/recycler_view3"
+        android:layout_marginLeft="15dp"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+
 
 </RelativeLayout>

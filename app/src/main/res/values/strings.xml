@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Toss</string>
     <string name="draw_throws">Введите число бросков</string>
-    <string name="button">бросить жребий</string>
+    <string name="button">бросить монетку</string>
 </resources>
